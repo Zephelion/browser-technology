@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Technology</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Web Development enquete 2023</h1>
+            <button>Begin enquete</button>
+        </section>
+        <section class="form-container">
+            <form id="form" action="#">
+
+                <section data-checkpoint="1" class="form-introduction">
+                    <h2>Persoonlijke informatie</h2>
+                    <label for="voornaam">Voornaam</label>
+                    <input type="text" id="voornaam" placeholder="Voornaam..." required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Email..." required>
+    
+                    <label for="studentnummer">Studentnummer</label>
+                    <input type="tel" id="studentnummer" placeholder="500831111" maxlength="9" required>
+
+                    <button type="submit">
+                        Volgende
+                    </button>
+                </section>
+
+                <section data-checkpoint="2" class="form-subjects">
+                    <h2>Kies vak</h2>
+                    <button>Wafs</button>
+                    <button>Css to the rescue</button>
+                    <button>Project</button>
+                    <button>Progressive web app</button>
+                    <button>Browser technology</button>
+                </section>
+
+            </form>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
