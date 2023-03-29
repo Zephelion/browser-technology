@@ -4,15 +4,17 @@ const formSection = document.querySelector(".form-container");
 const form = document.getElementById("form");
 const formIntroduction = document.querySelector(".form-introduction");
 const formSubjects = document.querySelector(".form-subjects");
+const subjectBtns = document.querySelectorAll("section.form-subjects button");
 
-console.log(formSubjects);
+console.log(subjectBtns);
 
 
 const validateEmail = (email) => {
     const re = /\S+@\S+\.\S+/;
     return re.test(email);
-
 }
+
+
 
 const checkInputs = (e) => {
     e.preventDefault();
@@ -26,6 +28,10 @@ const checkInputs = (e) => {
     }else{
         console.log("email is invalid")
     }
+}
+
+const showQuestions = (id) => {
+    console.log(id);
 }
 
 const showSubjects = () => {
@@ -83,4 +89,11 @@ window.addEventListener("DOMContentLoaded", () => {
 
     const studentnummer = document.getElementById("studentnummer");
     studentnummer.value = window.localStorage.getItem("studentnummer");
+});
+
+subjectBtns.forEach((subjectBtn) => {
+    subjectBtn.addEventListener("click", (e) => {
+        showQuestions(e.target.dataset.id);
+        // console.log(e.target.dataset.id);
+    })
 })
