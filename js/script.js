@@ -93,7 +93,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
 subjectBtns.forEach((subjectBtn) => {
     subjectBtn.addEventListener("click", (e) => {
-        showQuestions(e.target.dataset.id);
+        const id = e.target.dataset.id;
+        showQuestions(id);
         // console.log(e.target.dataset.id);
     })
 })
