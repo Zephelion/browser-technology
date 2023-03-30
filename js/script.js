@@ -5,8 +5,8 @@ const form = document.getElementById("form");
 const formIntroduction = document.querySelector(".form-introduction");
 const formSubjects = document.querySelector(".form-subjects");
 const subjectBtns = document.querySelectorAll("section.form-subjects button");
-
-console.log(subjectBtns);
+const introductionBtn = document.getElementById("introduction-btn");
+const introductionInputs = document.querySelectorAll(".introduction-input");
 
 
 const validateEmail = (email) => {
@@ -31,7 +31,18 @@ const checkInputs = (e) => {
 }
 
 const showQuestions = (id) => {
-    console.log(id);
+    const questionsSection = document.getElementById(id);
+    formSubjects.classList.remove("appear");
+    setTimeout(() => {
+        formSubjects.classList.remove("add");
+        questionsSection.classList.add("add");
+
+        setTimeout(() => {
+            questionsSection.classList.add("appear");
+        }, 1000);
+    }, 1000);
+
+    console.log(questionsSection);
 }
 
 const showSubjects = () => {
@@ -42,19 +53,22 @@ const showSubjects = () => {
         formSubjects.classList.add("add");
         
         setTimeout(() => {
-            formSubjects.classList.add("appear")
+            formSubjects.classList.add("appear");
         },1000)
     },1000);
 }
 
-const saveData = (e) => {
-    e.preventDefault();
+const saveData = () => {
+    // const inputs = e.target.querySelectorAll("input");
 
-    const inputs = e.target.querySelectorAll("input");
+    // const voornaam = inputs[0].value;
+    // const email = inputs[1].value;
+    // const studentnummer = inputs[2].value;
 
-    const voornaam = inputs[0].value;
-    const email = inputs[1].value;
-    const studentnummer = inputs[2].value;
+    const voornaam = introductionInputs[0].value;
+    const email = introductionInputs[1].value;
+    const studentnummer = introductionInputs[2].value;
+
 
     localStorage.setItem("voornaam", voornaam);
     localStorage.setItem("email", email);
@@ -64,7 +78,14 @@ const saveData = (e) => {
 }
 
 
-form.addEventListener("submit", saveData)
+form.addEventListener("submit", (e) => {
+    saveData(e);
+})
+
+introductionBtn.addEventListener("click", (e) => {
+    console.log("nu moet de data in localstorage komen");
+    saveData();
+});
 
 
 beginBtn.addEventListener("click", () => {
@@ -95,6 +116,5 @@ subjectBtns.forEach((subjectBtn) => {
     subjectBtn.addEventListener("click", (e) => {
         const id = e.target.dataset.id;
         showQuestions(id);
-        // console.log(e.target.dataset.id);
     })
 })

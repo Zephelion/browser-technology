@@ -102,3 +102,16 @@ section.form-subjects{
     opacity: 0;
     display: none;
 }
+
+section.subject{
+    opacity: 0;
+    display: none;
+}
+
+main section.form-container form section.subject.add{
+    display: flex;
+}
+
+main section.form-container form section.subject.appear{
+    opacity: 1;
+}

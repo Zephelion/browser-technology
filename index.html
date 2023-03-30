@@ -19,29 +19,142 @@
                 <section data-checkpoint="1" class="form-introduction">
                     <h2>Persoonlijke informatie</h2>
                     <label for="voornaam">Voornaam</label>
-                    <input type="text" id="voornaam" placeholder="Voornaam..." required>
+                    <input class="introduction-input" type="text" id="voornaam" placeholder="Voornaam..." required>
 
                     <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Email..." required>
+                    <input class="introduction-input" type="email" id="email" placeholder="Email..." required>
     
                     <label for="studentnummer">Studentnummer</label>
-                    <input type="tel" id="studentnummer" placeholder="500831111" maxlength="9" required>
+                    <input class="introduction-input" type="tel" id="studentnummer" placeholder="500831111" maxlength="9" required>
 
-                    <button type="submit">
+                    <button id="introduction-btn" type="button">
                         Volgende
                     </button>
                 </section>
 
                 <section data-checkpoint="2" class="form-subjects">
-                    <h2>Kies vak</h2>
-                    <button data-id="wafs">Wafs</button>
-                    <button data-id="css">Css to the rescue</button>
-                    <button data-id="project">Project</button>
-                    <button data-id="pwa">Progressive web app</button>
-                    <button data-id="bt">Browser technology</button>
+                    <h2>Kies een vak</h2>
+                    <button type="button" data-id="wafs">Wafs</button>
+                    <button type="button" data-id="css">Css to the rescue</button>
+                    <button type="button" data-id="project">Project</button>
+                    <button type="button" data-id="pwa">Progressive web app</button>
+                    <button type="button" data-id="bt">Browser technology</button>
                 </section>
 
-                <section id="wafs"></section>
+                <section class="subject" id="wafs">
+                    <h2>Web app from scratch</h2>
+                    <label for="wafs-docent">Docent</label>
+                    <input type="text" placeholder="Docent..." id="wafs-docent" required>
+
+                    <label for="wafs-startdatum">Startdatum</label>
+                    <input type="week" id="wafs-startdatum" required>
+
+                    <label for="wafs-einddatum">Einddatum</label>
+                    <input type="week" id="wafs-einddatum" required>
+
+                    <label for="wafs-lesstof">Lesstof (Hoe moeilijk vond je het?)</label>
+                    <input type="range" id="wafs-lesstof" min="1" max="10" required>
+
+                    <label for="wafs-uitleg">Uitleg (Hoe duidelijk vond je de uitleg?)</label>
+                    <input type="range" id="wafs-uitleg" min="1" max="10" required>
+
+                    <label for="wafs-inzicht">Inzicht (Hoe goed snap je het?)</label>
+                    <input type="range" id="wafs-inzicht" min="1" max="10" required>
+
+                    <button type="button">Sla op</button>
+                </section>
+                <section class="subject" id="css">
+                    <h2>Css to the resuce</h2>
+
+                    <label for="css-docent">Docent</label>
+                    <input type="text" placeholder="Docent..." id="css-docent" required>
+
+                    <label for="css-startdatum">Startdatum</label>
+                    <input type="week" id="css-startdatum" required>
+
+                    <label for="css-einddatum">Einddatum</label>
+                    <input type="week" id="css-einddatum" required>
+
+                    <label for="css-lesstof">Lesstof (Hoe moeilijk vond je het?)</label>
+                    <input type="range" id="css-lesstof" min="1" max="10" required>
+
+                    <label for="css-uitleg">Uitleg (Hoe duidelijk vond je de uitleg?)</label>
+                    <input type="range" id="css-uitleg" min="1" max="10" required>
+
+                    <label for="css-inzicht">Inzicht (Hoe goed snap je het?)</label>
+                    <input type="range" id="css-inzicht" min="1" max="10" required>
+
+                    <button type="button">Sla op</button>
+                </section>
+                <section class="subject" id="project">
+                    <h2>Project week 1</h2>
+
+                    <label for="project-docent">Docent</label>
+                    <input type="text" placeholder="Docent..." id="project-docent" required>
+
+                    <label for="project-startdatum">Startdatum</label>
+                    <input type="week" id="project-startdatum" required>
+
+                    <label for="project-einddatum">Einddatum</label>
+                    <input type="week" id="project-einddatum" required>
+
+                    <label for="project-lesstof">Lesstof (Hoe moeilijk vond je het?)</label>
+                    <input type="range" id="project-lesstof" min="1" max="10" required>
+
+                    <label for="project-uitleg">Uitleg (Hoe duidelijk vond je de uitleg?)</label>
+                    <input type="range" id="project-uitleg" min="1" max="10" required>
+
+                    <label for="project-inzicht">Inzicht (Hoe goed snap je het?)</label>
+                    <input type="range" id="project-inzicht" min="1" max="10" required>
+
+                    <button type="button">Sla op</button>
+                </section>
+                <section class="subject" id="pwa">
+                    <h2>Progressive web app</h2>
+
+                    <label for="pwa-docent">Docent</label>
+                    <input type="text" placeholder="Docent..." id="pwa-docent" required>
+
+                    <label for="pwa-startdatum">Startdatum</label>
+                    <input type="week" id="pwa-startdatum" required>
+
+                    <label for="pwa-einddatum">Einddatum</label>
+                    <input type="week" id="pwa-einddatum" required>
+
+                    <label for="pwa-lesstof">Lesstof (Hoe moeilijk vond je het?)</label>
+                    <input type="range" id="pwa-lesstof" min="1" max="10" required>
+
+                    <label for="pwa-uitleg">Uitleg (Hoe duidelijk vond je de uitleg?)</label>
+                    <input type="range" id="pwa-uitleg" min="1" max="10" required>
+
+                    <label for="pwa-inzicht">Inzicht (Hoe goed snap je het?)</label>
+                    <input type="range" id="pwa-inzicht" min="1" max="10" required>
+
+                    <button type="button">Sla op</button>
+                </section>
+                <section class="subject" id="bt">
+                    <h2>Browser technology</h2>
+
+                    <label for="bt-docent">Docent</label>
+                    <input type="text" placeholder="Docent..." id="bt-docent" required>
+
+                    <label for="bt-startdatum">Startdatum</label>
+                    <input type="week" id="bt-startdatum" required>
+
+                    <label for="bt-einddatum">Einddatum</label>
+                    <input type="week" id="bt-einddatum" required>
+
+                    <label for="bt-lesstof">Lesstof (Hoe moeilijk vond je het?)</label>
+                    <input type="range" id="bt-lesstof" min="1" max="10" required>
+
+                    <label for="bt-uitleg">Uitleg (Hoe duidelijk vond je de uitleg?)</label>
+                    <input type="range" id="bt-uitleg" min="1" max="10" required>
+
+                    <label for="bt-inzicht">Inzicht (Hoe goed snap je het?)</label>
+                    <input type="range" id="bt-inzicht" min="1" max="10" required>
+
+                    <button type="button">Sla op</button>
+                </section>
 
             </form>
         </section>
