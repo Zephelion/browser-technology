@@ -9,6 +9,8 @@ const introductionBtn = document.getElementById("introduction-btn");
 const introductionInputs = document.querySelectorAll(".introduction-input");
 
 
+const checkPoint = localStorage.getItem("checkPoint");
+
 const validateEmail = (email) => {
     const re = /\S+@\S+\.\S+/;
     return re.test(email);
@@ -54,17 +56,12 @@ const showSubjects = () => {
         
         setTimeout(() => {
             formSubjects.classList.add("appear");
+            setCheckPoint(formSubjects.dataset.checkpoint);
         },1000)
     },1000);
 }
 
 const saveData = () => {
-    // const inputs = e.target.querySelectorAll("input");
-
-    // const voornaam = inputs[0].value;
-    // const email = inputs[1].value;
-    // const studentnummer = inputs[2].value;
-
     const voornaam = introductionInputs[0].value;
     const email = introductionInputs[1].value;
     const studentnummer = introductionInputs[2].value;
@@ -77,13 +74,27 @@ const saveData = () => {
     showSubjects();
 }
 
+const setValues = () => {
+    const voornaam = document.getElementById("voornaam");
+    voornaam.value = window.localStorage.getItem("voornaam");
 
-form.addEventListener("submit", (e) => {
-    saveData(e);
-})
+    const email = document.getElementById("email");
+    email.value  = window.localStorage.getItem("email");
+
+    const studentnummer = document.getElementById("studentnummer");
+    studentnummer.value = window.localStorage.getItem("studentnummer");
+}
+
+const setCheckPoint = (checkpoint) => {
+    localStorage.setItem("checkPoint", checkpoint);
+}
+
+
+// form.addEventListener("submit", (e) => {
+//     saveData(e);
+// })
 
 introductionBtn.addEventListener("click", (e) => {
-    console.log("nu moet de data in localstorage komen");
     saveData();
 });
 
@@ -97,19 +108,24 @@ beginBtn.addEventListener("click", () => {
 
         setTimeout(() => {
             formSection.classList.add("appear");
+            setCheckPoint(formIntroduction.dataset.checkpoint);
         }, 1000)
     }, 1000);
 })
 
 window.addEventListener("DOMContentLoaded", () => {
-    const voornaam = document.getElementById("voornaam");
-    voornaam.value = window.localStorage.getItem("voornaam");
+    setValues();
 
-    const email = document.getElementById("email");
-    email.value  = window.localStorage.getItem("email");
-
-    const studentnummer = document.getElementById("studentnummer");
-    studentnummer.value = window.localStorage.getItem("studentnummer");
+    if(checkPoint == 1){
+        beginSection.classList.add("remove");
+        formSection.classList.add("add");
+        formSection.classList.add("appear");
+    }else if (checkPoint == 2){
+        beginSection.classList.add("remove");
+        console.log("nu moeten de vakken komen");
+        formSubjects.classList.add("add");
+        formSubjects.classList.add("appear");
+    }
 });
 
 subjectBtns.forEach((subjectBtn) => {
