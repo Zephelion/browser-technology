@@ -1,0 +1,21 @@
+<form class="form-introduction" action="/introduction" method="POST">
+    <section data-checkpoint="1" class="form-introduction">
+        <h2>Persoonlijke informatie</h2>
+        <label for="voornaam">Voornaam</label>
+        <input class="introduction-input" name="voornaam" type="text" id="voornaam" placeholder="Voornaam..." value="{{ voornaam }}" required>
+        <span id="voornaam-description" class="description">Heel goed</span>
+
+        <label for="email">Email</label>
+        <input class="introduction-input" name="email" type="email" id="email" placeholder="Email..." value="{{ email }}" required>
+        <span id="email-description" class="description">Heel goed email klopt</span>
+
+        <label for="studentnummer">Studentnummer</label>
+        <input class="introduction-input" pattern="[0-9]{9}" name="studentnummer" type="tel" id="studentnummer" placeholder="500831111" maxlength="9" value="{{ studentnummer }}" required>
+        <span id="studentnummer-description" class="description">Heel goed studentnummer klopt</span>
+
+        <button id="introduction-btn" type="submit">
+            Volgende
+        </button>
+    </section>
+</form>
+<script src="/js/validation.js"></script>

@@ -50,7 +50,7 @@ main{
 
 form input{
     padding: 13px;
-    /* outline: 1px solid #61dfff; */
+    outline: none;
 }
 
 main section{
@@ -114,4 +114,9 @@ main section.form-container form section.subject.add{
 
 main section.form-container form section.subject.appear{
     opacity: 1;
+}
+
+.filled{
+    border: 1px solid green;
+
 }

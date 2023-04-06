@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 100;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+h2{
+    text-align: center;
+    font-weight: 100;
+    border-bottom: 1px solid #61dfff;
+    margin-bottom: 70px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input{
+    padding: 13px;
+    outline: none;
+    border: none;
+    border-bottom: 1.2px solid black;
+    /* transition: 0.4s; */
+}
+
+main section{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    opacity: 1;
+    transition: 0.4s;
+}
+
+main section h1{
+    font-family: sans-serif;
+    font-size: 2em;
+    font-weight: 100;
+}
+
+main section a{
+    outline: none;
+    background-color: white;
+    border: 0.5px solid black;
+    padding: 13px;
+    cursor: pointer;
+    transition: 0.4s;
+    text-align: center;
+}
+
+main section button{
+    outline: none;
+    background-color: white;
+    border: 0.5px solid black;
+    padding: 13px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+main section button:hover{
+    transform: scale(1.1);
+}
+
+main section a:hover{
+    transform: scale(1.1);
+}
+
+main section.form-introduction{
+    width: 30em;
+}
+
+main section.form-subjects{
+    width: 30em;
+}
+
+main section.subject{
+    width: 30em;
+}
+
+input[type="text"]:valid,
+input[type="email"]:valid,
+input[type="tel"]:valid{
+    border-bottom: 2.5px solid #17b517;
+}
+
+span.description{
+    color: #17b517;
+    font-size: 0.7em;
+    visibility: hidden;
+}
+
+span.description.appear{
+    visibility: visible;
+}
+
+/* .valid{
+    border-bottom: 2.5px solid #17b517;
+} */

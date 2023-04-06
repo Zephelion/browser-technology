@@ -9,7 +9,7 @@ const introductionBtn = document.getElementById("introduction-btn");
 const introductionInputs = document.querySelectorAll(".introduction-input");
 
 
-const checkPoint = localStorage.getItem("checkPoint");
+// const checkPoint = localStorage.getItem("checkPoint");
 
 const validateEmail = (email) => {
     const re = /\S+@\S+\.\S+/;

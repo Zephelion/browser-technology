@@ -1,0 +1,28 @@
+{
+  "name": "bt---2023",
+  "version": "1.0.0",
+  "description": "Mutiple enquete in node",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zephelion/browser-technology.git"
+  },
+  "author": "Russell Numo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zephelion/browser-technology/issues"
+  },
+  "homepage": "https://github.com/Zephelion/browser-technology#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.0.4",
+    "node-localstorage": "^2.2.1",
+    "nodemon": "^2.0.22"
+  }
+}

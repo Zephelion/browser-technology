@@ -1,0 +1,25 @@
+<section class="subject" id="{{ subject.id }}">
+    <form class="questions" action="/subject/{{ nextSubject.id }}" method="POST">
+
+        <h2>{{ subject.name }}</h2>
+        <label for="{{ subject.id }}-docent">Docent</label>
+        <input type="text" name="{{ subject.id }}docent" placeholder="Docent..." id="{{ subject.id }}-docent" value="{{ answers.docent }}" required>
+
+        <label for="{{ subject.id }}-startdatum">Startdatum</label>
+        <input type="week" name="{{ subject.id }}startdatum" id="{{ subject.id }}-startdatum" value="{{ answers.startdatum }}" required>
+
+        <label for="{{ subject.id }}-einddatum">Einddatum</label>
+        <input type="week" name="{{ subject.id }}einddatum" id="{{ subject.id }}-einddatum" value="{{ answers.einddatum }}" required>
+
+        <label for="{{ subject.id }}-lesstof">Lesstof (Hoe moeilijk vond je het?)</label>
+        <input type="range" name="{{ subject.id }}lesstof" id="{{ subject.id }}-lesstof" min="1" max="10" value="{{ answers.lesstof }}" required>
+
+        <label for="{{ subject.id }}-uitleg">Uitleg (Hoe duidelijk vond je de uitleg?)</label>
+        <input type="range" name="{{ subject.id }}uitleg" id="{{ subject.id }}-uitleg" min="1" max="10" value="{{ answers.uitleg }}" required>
+
+        <label for="{{ subject.id }}-inzicht">Inzicht (Hoe goed snap je het?)</label>
+        <input type="range" name="{{ subject.id }}inzicht" id="{{ subject.id }}-inzicht" min="1" max="10" value="{{ answers.inzicht }}" required>
+
+        <button type="submit">Volgende</button>
+    </form>
+</section>
