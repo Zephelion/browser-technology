@@ -99,7 +99,8 @@ main section.subject{
 
 input[type="text"]:valid,
 input[type="email"]:valid,
-input[type="tel"]:valid{
+input[type="tel"]:valid,
+input[type="week"]:valid{
     border-bottom: 2.5px solid #17b517;
 }
 

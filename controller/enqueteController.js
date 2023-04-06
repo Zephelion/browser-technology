@@ -112,10 +112,30 @@ const storeAnswers = (req,res) => {
     
 }
 
+const storeLastAnswers = (req,res) => {
+    const docent = req.body.pwadocent;
+    const startdatum = req.body.pwastartdatum;
+    const einddatum = req.body.pwaeinddatum;
+    const lesstof = req.body.pwalesstof;
+    const uitleg = req.body.pwauitleg;
+    const inzicht = req.body.pwainzicht;
+
+    localstorage.setItem('pwadocent', docent);
+    localstorage.setItem('pwastartdatum', startdatum);
+    localstorage.setItem('pwaeinddatum', einddatum);
+    localstorage.setItem('pwalesstof', lesstof);
+    localstorage.setItem('pwauitleg', uitleg);
+    localstorage.setItem('pwainzicht', inzicht);
+
+    res.render('end');
+    console.log(docent);
+}
+
 export{
     index,
     introduction,
     storePersonalInfo,
     subject,
-    storeAnswers
+    storeAnswers,
+    storeLastAnswers
 }
