@@ -46,6 +46,8 @@ const storePersonalInfo = (req,res) => {
     const email = req.body.email;
     const studentnummer = req.body.studentnummer;
 
+    console.log(voornaam, email, studentnummer);
+
     localstorage.setItem('voornaam', voornaam);
     localstorage.setItem('email', email);
     localstorage.setItem('studentnummer', studentnummer);
