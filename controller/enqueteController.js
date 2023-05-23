@@ -97,6 +97,9 @@ const storeAnswers = (req,res) => {
     const uitleg = req.body[name + 'uitleg'];
     const inzicht = req.body[name + 'inzicht'];
 
+    console.log(lesstof, uitleg, inzicht);
+
+
     localstorage.setItem(name + 'docent', docent);
     localstorage.setItem(name + 'startdatum', startdatum);
     localstorage.setItem(name + 'einddatum', einddatum);

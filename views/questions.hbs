@@ -11,14 +11,155 @@
         <label for="{{ subject.id }}-einddatum">Einddatum</label>
         <input type="week" name="{{ subject.id }}einddatum" id="{{ subject.id }}-einddatum" value="{{ answers.einddatum }}" required>
 
-        <label for="{{ subject.id }}-lesstof">Lesstof (Hoe moeilijk vond je het?)</label>
+        <fieldset class="radio">
+            <legend>Lesstof (Hoe moeilijk vond je het?)</legend>
+            <div class="wrapper">
+
+                <label for="{{ subject.id }}-lesstof">Cijfer</label>
+                <input type="radio" name="{{ subject.id }}lesstof" id="{{ subject.id }}-lesstof" id="1" value="1" required>
+                <span>1</span>
+
+                <label for="{{ subject.id }}-lesstof"></label>
+                <input type="radio" name="{{ subject.id }}lesstof" id="{{ subject.id }}-lesstof" id="2" value="2" required>
+                <span>2</span>
+
+                <label for="{{ subject.id }}-lesstof"></label>
+                <input type="radio" name="{{ subject.id }}lesstof" id="{{ subject.id }}-lesstof" id="3" value="3" required>
+                <span>3</span>
+
+                <label for="{{ subject.id }}-lesstof"></label>
+                <input type="radio" name="{{ subject.id }}lesstof" id="{{ subject.id }}-lesstof" id="4" value="4" required>
+                <span>4</span>
+
+                <label for="{{ subject.id }}-lesstof"></label>
+                <input type="radio" name="{{ subject.id }}lesstof" id="{{ subject.id }}-lesstof" id="5" value="5" required>
+                <span>5</span>
+
+                <label for="{{ subject.id }}-lesstof"></label>
+                <input type="radio" name="{{ subject.id }}lesstof" id="{{ subject.id }}-lesstof" id="6" value="6" required>
+                <span>6</span>
+
+                <label for="{{ subject.id }}-lesstof"></label>
+                <input type="radio" name="{{ subject.id }}lesstof" id="{{ subject.id }}-lesstof" id="7" value="7" required>
+                <span>7</span>
+
+                <label for="{{ subject.id }}-lesstof"></label>
+                <input type="radio" name="{{ subject.id }}lesstof" id="{{ subject.id }}-lesstof" id="8" value="8" required>
+                <span>8</span>
+
+                <label for="{{ subject.id }}-lesstof"></label>
+                <input type="radio" name="{{ subject.id }}lesstof" id="{{ subject.id }}-lesstof" id="9" value="9" required>
+                <span>9</span>
+
+                <label for="{{ subject.id }}-lesstof"></label>
+                <input type="radio" name="{{ subject.id }}lesstof" id="{{ subject.id }}-lesstof" id="10" value="10" required>
+                <span>10</span>
+
+            </div>
+        </fieldset>
+
+        <fieldset class="radio">
+            <legend>Uitleg (Hoe duidelijk vond je de uitleg?)</legend>
+            <div class="wrapper">
+
+                <label for="{{ subject.id }}-uitleg">Cijfer</label>
+                <input type="radio" name="{{ subject.id }}uitleg" id="{{ subject.id }}-uitleg" id="1" value="1" required>
+                <span>1</span>
+
+                <label for="{{ subject.id }}-uitleg"></label>
+                <input type="radio" name="{{ subject.id }}uitleg" id="{{ subject.id }}-uitleg" id="2" value="2" required>
+                <span>2</span>
+
+                <label for="{{ subject.id }}-uitleg"></label>
+                <input type="radio" name="{{ subject.id }}uitleg" id="{{ subject.id }}-uitleg" id="3" value="3" required>
+                <span>3</span>
+
+                <label for="{{ subject.id }}-uitleg"></label>
+                <input type="radio" name="{{ subject.id }}uitleg" id="{{ subject.id }}-uitleg" id="4" value="4" required>
+                <span>4</span>
+
+                <label for="{{ subject.id }}-uitleg"></label>
+                <input type="radio" name="{{ subject.id }}uitleg" id="{{ subject.id }}-uitleg" id="5" value="5" required>
+                <span>5</span>
+
+                <label for="{{ subject.id }}-uitleg"></label>
+                <input type="radio" name="{{ subject.id }}uitleg" id="{{ subject.id }}-uitleg" id="6" value="6" required>
+                <span>6</span>
+
+                <label for="{{ subject.id }}-uitleg"></label>
+                <input type="radio" name="{{ subject.id }}uitleg" id="{{ subject.id }}-uitleg" id="7" value="7" required>
+                <span>7</span>
+
+                <label for="{{ subject.id }}-uitleg"></label>
+                <input type="radio" name="{{ subject.id }}uitleg" id="{{ subject.id }}-uitleg" id="8" value="8" required>
+                <span>8</span>
+
+                <label for="{{ subject.id }}-uitleg"></label>
+                <input type="radio" name="{{ subject.id }}uitleg" id="{{ subject.id }}-uitleg" id="9" value="9" required>
+                <span>9</span>
+
+                <label for="{{ subject.id }}-uitleg"></label>
+                <input type="radio" name="{{ subject.id }}uitleg" id="{{ subject.id }}-uitleg" id="10" value="10" required>
+                <span>10</span>
+
+            </div>
+        </fieldset>
+
+        <fieldset class="radio">
+            <legend>Inzicht (Hoe goed snap je het?)</legend>
+            <div class="wrapper">
+
+                <label for="{{ subject.id }}-inzicht">Cijfer</label>
+                <input type="radio" name="{{ subject.id }}inzicht" id="{{ subject.id }}-inzicht" id="1" value="1" required>
+                <span>1</span>
+
+                <label for="{{ subject.id }}-inzicht"></label>
+                <input type="radio" name="{{ subject.id }}inzicht" id="{{ subject.id }}-inzicht" id="2" value="2" required>
+                <span>2</span>
+
+                <label for="{{ subject.id }}-inzicht"></label>
+                <input type="radio" name="{{ subject.id }}inzicht" id="{{ subject.id }}-inzicht" id="3" value="3" required>
+                <span>3</span>
+
+                <label for="{{ subject.id }}-uitleg"></label>
+                <input type="radio" name="{{ subject.id }}inzicht" id="{{ subject.id }}-inzicht" id="4" value="4" required>
+                <span>4</span>
+
+                <label for="{{ subject.id }}-uitleg"></label>
+                <input type="radio" name="{{ subject.id }}inzicht" id="{{ subject.id }}-inzicht" id="5" value="5" required>
+                <span>5</span>
+
+                <label for="{{ subject.id }}-uitleg"></label>
+                <input type="radio" name="{{ subject.id }}inzicht" id="{{ subject.id }}-inzicht" id="6" value="6" required>
+                <span>6</span>
+
+                <label for="{{ subject.id }}-uitleg"></label>
+                <input type="radio" name="{{ subject.id }}inzicht" id="{{ subject.id }}-inzicht" id="7" value="7" required>
+                <span>7</span>
+
+                <label for="{{ subject.id }}-uitleg"></label>
+                <input type="radio" name="{{ subject.id }}inzicht" id="{{ subject.id }}-inzicht" id="8" value="8" required>
+                <span>8</span>
+
+                <label for="{{ subject.id }}-uitleg"></label>
+                <input type="radio" name="{{ subject.id }}inzicht" id="{{ subject.id }}-inzicht" id="9" value="9" required>
+                <span>9</span>
+
+                <label for="{{ subject.id }}-uitleg"></label>
+                <input type="radio" name="{{ subject.id }}inzicht" id="{{ subject.id }}-inzichts" id="10" value="10" required>
+                <span>10</span>
+
+            </div>
+        </fieldset>
+
+        {{!-- <label for="{{ subject.id }}-lesstof">Lesstof (Hoe moeilijk vond je het?)</label>
         <input type="range" name="{{ subject.id }}lesstof" id="{{ subject.id }}-lesstof" min="1" max="10" value="{{ answers.lesstof }}" required>
 
         <label for="{{ subject.id }}-uitleg">Uitleg (Hoe duidelijk vond je de uitleg?)</label>
         <input type="range" name="{{ subject.id }}uitleg" id="{{ subject.id }}-uitleg" min="1" max="10" value="{{ answers.uitleg }}" required>
 
         <label for="{{ subject.id }}-inzicht">Inzicht (Hoe goed snap je het?)</label>
-        <input type="range" name="{{ subject.id }}inzicht" id="{{ subject.id }}-inzicht" min="1" max="10" value="{{ answers.inzicht }}" required>
+        <input type="range" name="{{ subject.id }}inzicht" id="{{ subject.id }}-inzicht" min="1" max="10" value="{{ answers.inzicht }}" required> --}}
 
         <button type="submit">Volgende</button>
     </form>

@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+
+
 a{
     text-decoration: none;
     color: black;
@@ -100,7 +102,8 @@ main section.subject{
 input[type="text"]:valid,
 input[type="email"]:valid,
 input[type="tel"]:valid,
-input[type="week"]:valid{
+input[type="week"]:valid,
+input[type="radio"]:valid{
     border-bottom: 2.5px solid #17b517;
 }
 
@@ -114,6 +117,43 @@ span.description.appear{
     visibility: visible;
 }
 
+fieldset{
+    padding: 15px;
+}
+
 /* .valid{
     border-bottom: 2.5px solid #17b517;
 } */
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: white;
+    }
+
+    body main > section{
+        background-color: #1e1e1e;
+        padding: 25px;
+    }
+
+    main section a{
+        color: white;
+        background-color: transparent;
+    }
+
+    input{
+        background-color: #1e1e1e;
+        color: white;
+    }
+
+    main section button{
+        background-color: #1e1e1e;
+        color: white;
+    }
+
+    button#introduction-btn{
+        background-color: #1e1e1e;
+        color: white;
+    }
+  
+}

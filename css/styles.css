@@ -15,6 +15,10 @@ h2{
     margin-bottom: 70px;
 }
 
+fieldset{
+    padding: 15px;
+}
+
 .disappear{
     opacity: 0;
 }
@@ -120,3 +124,4 @@ main section.form-container form section.subject.appear{
     border: 1px solid green;
 
 }
+
