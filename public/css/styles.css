@@ -107,6 +107,57 @@ input[type="radio"]:valid{
     border-bottom: 2.5px solid #17b517;
 }
 
+input[type="radio"]{
+    display: none;
+}
+
+label:has(input[type="radio"]){
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+/* input[type="radio"] + label{
+    position: relative;
+    padding: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: 0.4s;
+} */
+
+
+label:has(input[type="radio"])::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid greenyellow;
+    /* border-radius: 50%; */
+}
+
+label:has(input[type="radio"]:checked)::before{
+    /* background-color: greenyellow; */
+    font-weight: bold;
+    color: white;
+}
+
+label:has(input[type="radio"]:checked){
+    font-weight: bold;
+    color: red;
+}
+
+
+
+/* input[type="radio"]:checked + label{
+    font-weight: bold;
+    color: black;
+} */
+
+
+
 span.description{
     color: #17b517;
     font-size: 0.7em;
