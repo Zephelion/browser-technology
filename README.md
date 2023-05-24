@@ -62,3 +62,5 @@ Flow is developed by the Ekioh company, which has made simpler browsers for set-
 
 * The pattern and max attribute does not work on flow
 * The submission of the form does not work at all. When clicked nothing happens
+* No pointer cursor
+* Native html form validation is non existent
