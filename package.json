@@ -2,12 +2,12 @@
   "name": "bt---2023",
   "version": "1.0.0",
   "description": "Mutiple enquete in node",
-  "main": "index.js",
+  "main": "app.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon app.js",
-    "start": "node index.js"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
