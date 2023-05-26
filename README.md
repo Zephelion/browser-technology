@@ -6,7 +6,7 @@ I ended up creating an online web survey.
 |:---:|
 |![First Image](/public/images/enquete1.png)|
 
-[Link naar demo](http:localhost:3000)
+[Link naar demo](http://localhost:3000)
 
 ## Core features
 Before actually starting to creating the online survey I was tasked to define some core functionality. The core functionality are listed down below
