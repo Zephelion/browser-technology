@@ -33,6 +33,10 @@ The key principle of progressive enhancement is to start with a solid foundation
 
 I choose to seperate the each course in a survey this means that whenever a user were to click on the submit button the data would get send to the server and with some magic would be saved in the database. If the student wanted to continue the server the server would retrieve the answers saved in the database and show it to the user.
 
+|Light mode| Dark mode|
+|:---:|:---:
+|![enquete](/public/images/enquete1.png)|![dark mode](/public/images/darkmode.png)
+
 ## Testing :electric_plug:
 I decided to test my application in different browsers
 
@@ -64,3 +68,6 @@ Flow is developed by the Ekioh company, which has made simpler browsers for set-
 * The submission of the form does not work at all. When clicked nothing happens
 * No pointer cursor
 * Native html form validation is non existent
+
+## Screenreader Test
+The screenreader detects everything on the webpage except the radio buttons. For some reason when I tab through the application the screenreader skips the radio buttons (maybe because I styled the label instead of the radio button)
