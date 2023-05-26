@@ -72,6 +72,9 @@ Flow is developed by the Ekioh company, which has made simpler browsers for set-
 ## Screenreader Test
 The screenreader detects everything on the webpage except the radio buttons. For some reason when I tab through the application the screenreader skips the radio buttons (maybe because I styled the label instead of the radio button)
 
+**Fixed**
+I ended using `appearance:none` instead of `display:none` so that the screenreader also detects the radio button.
+
 ## Mobile Test
 ### Safari Iphone
 * Input type week does not work 

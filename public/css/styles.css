@@ -108,7 +108,16 @@ input[type="radio"]:valid{
 }
 
 input[type="radio"]{
-    display: none;
+    /* display: none; */
+    /* visibility: hidden; */
+    appearance: none;
+    width: 0;
+    height: 0;
+}
+
+div.wrapper{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 label:has(input[type="radio"]){
